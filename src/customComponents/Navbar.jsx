@@ -9,31 +9,44 @@ const Navbar = () => {
   return (
     <nav
       className="bg-white shadow-md font-[Inter] sticky top-0 z-50"
-      role="navigation" 
+      role="navigation"
       aria-label="Main Navigation"
     >
-      <div className="container md:px-32 px-4 py-5 flex justify-between items-center">
-        <a
-          href="/"
-          className="text-2xl font-medium"
-          aria-label="City Care Homepage"
-        >
-          <span className='text-[#5FA2FF] font-bold '>City</span> Care
-        </a>
+      <div className="container md:px-32 px-4 py-3 flex justify-between items-center">
+        <div className="flex flex-col items-start">
+          <div className="flex items-center gap-x-2">
+            <img src="logo.png" alt="city-care-logo" className="w-8 h-8" />
 
-        <ul className="hidden md:flex items-center gap-x-24 font-medium" role="menubar">
-          {NavItems?.length >0 &&  NavItems?.map((item, index) => (
-            <li key={index} role="none">
-              <a
-                href={`#${item.title.toLowerCase()}`}
-                className="hover:text-blue-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
-                role="menuitem"
-                tabIndex={0}
-              >
-                {item.title}
-              </a>
-            </li>
-          ))}
+            <a
+              href="/"
+              className="text-xl font-medium"  
+              aria-label="City Care Homepage"
+            >
+              <span className="text-[#5FA2FF] font-bold">City</span> Care
+            </a>
+          </div>
+          <span className="text-xs text-gray-600 italic">
+            Care that Cares
+          </span>
+        </div>
+
+        <ul
+          className="hidden md:flex items-center gap-x-24 font-medium"
+          role="menubar"
+        >
+          {NavItems?.length > 0 &&
+            NavItems?.map((item, index) => (
+              <li key={index} role="none">
+                <a
+                  href={`#${item.title.toLowerCase()}`}
+                  className="hover:text-blue-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded text-sm"
+                  role="menuitem"
+                  tabIndex={0}
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
         </ul>
 
         <div className="hidden md:block">
@@ -45,7 +58,6 @@ const Navbar = () => {
           </Button>
         </div>
 
-       
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
