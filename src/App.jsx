@@ -1,8 +1,10 @@
 import Faq from './customComponents/Faq';
+import Footer from './customComponents/Footer';
 import Hero from './customComponents/Hero';
 import MapView from './customComponents/MapView';
+import MedicalSpecialties from './customComponents/MedicalSpecialties';
 import Navbar from './customComponents/Navbar';
-import ServicesSection from './customComponents/Service';
+
 import { faqData } from './utils/data';
 
 function App() {
@@ -10,9 +12,11 @@ function App() {
     <>
       <Navbar />
       <Hero/>
+      <MedicalSpecialties/>
       <MapView/>
-      <ServicesSection/>
+     
       <Faq faqData={faqData} title="Frequently Asked Questions"/>
+      <Footer/>
     </>
   );
 }

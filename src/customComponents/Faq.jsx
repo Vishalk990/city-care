@@ -46,7 +46,7 @@ export default function Faq({ faqData, title = 'Frequently Asked Questions' }) {
           <div className="inline-flex items-center justify-center p-2 bg-blue-100 rounded-full">
             <HelpCircle className="w-6 h-6text-[#5FA2FF]" />
           </div>
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-[#5FA2FF] to-purple-600 bg-clip-text text-transparent">
             {title}
           </h2>
         </div>

@@ -1,14 +1,213 @@
-export const NavItems = [
-    {
-        title:"Service"
-    },
-    {
-        title:"FAQs"
-    },
-    {
-        title:"Help"
-    },
+import { Baby, Bone, Brain, Ear, Eye, Heart, Microscope, Pill } from "lucide-react";
+
+
+export const NavItems = [{ title: "Service" }, { title: "FAQs" }, { title: "Help" },
 ]
+
+export const doctors = {
+  medicine: [
+    {
+      id: 1,
+      name: "Dr. Sarah Johnson",
+      specialty: "General Medicine",
+      experience: "15+ years",
+      rating: 4.9,
+      reviews: 124,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Wed, Fri",
+      location: "Main Hospital, Floor 2",
+      education: "MD, Internal Medicine",
+      phone: "+1 (555) 123-4567",
+    },
+    {
+      id: 2,
+      name: "Dr. Michael Chen",
+      specialty: "Internal Medicine",
+      experience: "12+ years",
+      rating: 4.7,
+      reviews: 98,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Tue, Thu, Sat",
+      location: "East Wing, Floor 3",
+      education: "MD, MBBS",
+      phone: "+1 (555) 987-6543",
+    },
+    {
+      id: 3,
+      name: "Dr. Emily Rodriguez",
+      specialty: "Family Medicine",
+      experience: "8+ years",
+      rating: 4.8,
+      reviews: 87,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Tue, Thu",
+      location: "West Wing, Floor 1",
+      education: "MD, Family Practice",
+      phone: "+1 (555) 456-7890",
+    },
+  ],
+  surgery: [
+    {
+      id: 4,
+      name: "Dr. James Wilson",
+      specialty: "General Surgery",
+      experience: "20+ years",
+      rating: 4.9,
+      reviews: 156,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Wed, Fri",
+      location: "Surgical Wing, Floor 4",
+      education: "MD, MS Surgery",
+      phone: "+1 (555) 234-5678",
+    },
+    {
+      id: 5,
+      name: "Dr. Lisa Patel",
+      specialty: "Laparoscopic Surgery",
+      experience: "14+ years",
+      rating: 4.8,
+      reviews: 112,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Tue, Thu, Sat",
+      location: "Surgical Wing, Floor 3",
+      education: "MD, MS, FRCS",
+      phone: "+1 (555) 876-5432",
+    },
+  ],
+  obsGynae: [
+    {
+      id: 6,
+      name: "Dr. Amanda Lee",
+      specialty: "Obstetrics & Gynecology",
+      experience: "16+ years",
+      rating: 4.9,
+      reviews: 143,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Wed, Fri",
+      location: "Women's Health Center, Floor 2",
+      education: "MD, OBGYN",
+      phone: "+1 (555) 345-6789",
+    },
+  ],
+  ent: [
+    {
+      id: 7,
+      name: "Dr. Robert Kim",
+      specialty: "ENT Specialist",
+      experience: "18+ years",
+      rating: 4.7,
+      reviews: 118,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Tue, Thu, Sat",
+      location: "Specialty Wing, Floor 3",
+      education: "MD, ENT",
+      phone: "+1 (555) 567-8901",
+    },
+  ],
+  dermatology: [
+    {
+      id: 8,
+      name: "Dr. Jessica Brown",
+      specialty: "Dermatology",
+      experience: "10+ years",
+      rating: 4.8,
+      reviews: 92,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Wed, Fri",
+      location: "Dermatology Center, Floor 1",
+      education: "MD, Dermatology",
+      phone: "+1 (555) 678-9012",
+    },
+  ],
+  cardiology: [
+    {
+      id: 9,
+      name: "Dr. Thomas Wright",
+      specialty: "Cardiology",
+      experience: "22+ years",
+      rating: 4.9,
+      reviews: 187,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Wed, Fri",
+      location: "Cardiac Center, Floor 5",
+      education: "MD, DM Cardiology",
+      phone: "+1 (555) 789-0123",
+    },
+    {
+      id: 10,
+      name: "Dr. Maria Garcia",
+      specialty: "Interventional Cardiology",
+      experience: "15+ years",
+      rating: 4.8,
+      reviews: 124,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Tue, Thu, Sat",
+      location: "Cardiac Center, Floor 4",
+      education: "MD, DM, FACC",
+      phone: "+1 (555) 890-1234",
+    },
+  ],
+  neurology: [
+    {
+      id: 11,
+      name: "Dr. David Thompson",
+      specialty: "Neurology",
+      experience: "19+ years",
+      rating: 4.9,
+      reviews: 156,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Wed, Fri",
+      location: "Neuroscience Center, Floor 3",
+      education: "MD, DM Neurology",
+      phone: "+1 (555) 901-2345",
+    },
+  ],
+  ophthalmology: [
+    {
+      id: 12,
+      name: "Dr. Susan Clark",
+      specialty: "Ophthalmology",
+      experience: "14+ years",
+      rating: 4.8,
+      reviews: 108,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Tue, Thu, Sat",
+      location: "Eye Center, Floor 2",
+      education: "MD, MS Ophthalmology",
+      phone: "+1 (555) 012-3456",
+    },
+  ],
+  orthopedics: [
+    {
+      id: 13,
+      name: "Dr. Richard Martinez",
+      specialty: "Orthopedic Surgery",
+      experience: "20+ years",
+      rating: 4.9,
+      reviews: 167,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Mon, Wed, Fri",
+      location: "Orthopedic Center, Floor 3",
+      education: "MD, MS Orthopedics",
+      phone: "+1 (555) 123-4567",
+    },
+  ],
+  pulmonology: [
+    {
+      id: 14,
+      name: "Dr. Jennifer Adams",
+      specialty: "Pulmonology",
+      experience: "16+ years",
+      rating: 4.8,
+      reviews: 132,
+      image: "/placeholder.svg?height=300&width=300",
+      availability: "Tue, Thu, Sat",
+      location: "Respiratory Center, Floor 4",
+      education: "MD, DM Pulmonology",
+      phone: "+1 (555) 234-5678",
+    },
+  ],
+};
 
 export const faqData = [
   {
@@ -52,4 +251,3 @@ export const faqData = [
     answer: "Patients can access their medical records through our secure patient portal, which is available on our website and mobile app. You can view test results, appointment history, treatment plans, and more. For full medical record copies or records not available online, please submit a request through our medical records department."
   }
 ];
-    
